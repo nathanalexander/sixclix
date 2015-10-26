@@ -1,0 +1,90 @@
+html, body {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+  	height: 100%;
+}
+
+body {
+	background-color: #ccc;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	letter-spacing: 2px;
+	color: #5D5D5D;
+	overflow: hidden;
+	font-weight: 400;
+}
+#content {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#page_text p {
+	display: none;
+}
+#image-container {
+	width: 45%;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#content img {
+	width: 100%;
+	height: auto;
+}
+
+#left-nav, #right-nav {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#left-nav, #right-nav {
+	width: 100px;
+}
+
+#left-nav {
+	float: left;
+}
+
+#right-nav {
+	float: right;
+}
+
+.choice {
+	position: fixed;
+	top: 50%;
+	font-size: 1.5em;
+	width: 23%;
+}
+
+.choice img {
+	max-height: 40px;
+}
+.choice:hover {
+	cursor: pointer;
+}
+.choice:first-child {
+	left: 2%;
+}
+
+.choice:nth-child(2) {
+	right: 2%;
+}
+
+@media screen and (min-width:1200px) {
+	.choice {
+		font-size: 2.0em;
+	}
+}
+
+
+@media screen and (max-width:768px) {
+	.choice {
+		font-size: 0.85em;
+	}
+}
