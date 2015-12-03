@@ -106,10 +106,10 @@ body {
 	}
 
 	.choice {
-		font-size: 0.85em;
-		display: block;
-		position: fixed;
-		width: 100%;
+		font-size: 1em;
+		display: inline-block;
+		position: relative;
+		width: 50%;
 		
 	}
 
