@@ -102,35 +102,45 @@ body {
 
 @media screen and (max-width:767px) {
 	#image-container {
-		/*margin-top: 10px;*/
+		margin-top: 10px;
 	}
 
 	.choice {
 	    font-size: 1em;
 	    display: inline-block;
 	    position: relative;
+	    width: 33%;
+	    height: 100%;
 		
 	}
 
+	.choice:first-child {
+		text-align: left;
+	}
+
 	.choice:nth-child(2) {
-		top: 90%;
+		text-align: right;
 	}
 
 	#response {
 		width: 100%;
 		position: fixed;
-		bottom: 20px;
+		height: 30vh;
+		/*bottom: 20px;*/
 	}
 
 
 }
 
 @media screen and (max-height:450px) {
-	
+	#image-container {
+		margin-top: 0px;
+	}
 
 	.choice {
 		top: 50%;
 		width: 33%;
+		position: fixed;
 		
 	}
 	.choice:first-child {
@@ -151,8 +161,7 @@ body {
 	}
 	#response {
 		width: 100%;
-		position: fixed;
-		bottom: 5%;
+		
 	}
 
 
